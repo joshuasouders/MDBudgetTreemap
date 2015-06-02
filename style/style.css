@@ -1,0 +1,238 @@
+@import url(http://fonts.googleapis.com/css?family=Kreon);
+
+body {
+  background: url(texture-noise.png);
+  overflow: auto;
+  margin: 0;
+  font-size: 14px;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-family: "Kreon";
+  color:#000000;
+  width:100%;
+  position:relative;
+}
+
+#chart, #header, #footer {
+  position: absolute;
+  top: 0;
+}
+
+#header, #footer {
+  z-index: 1;
+  display: block;
+  font-size: 36px;
+/*  font-weight: 300;
+  text-shadow: 0 1px 0 #fff;
+  font-family: "Times New Roman", Times, serif;*/
+}
+
+#header.inverted, #footer.inverted {
+  color: #fff;
+  text-shadow: 0 1px 4px #000;
+}
+
+#header {
+  top: 80px;
+  left: 140px;
+  width: 1000px;
+}
+
+#footer {
+  top: 625px;
+  text-align: right;
+  width:960px;
+}
+
+#chart {
+	background-color:#ffffff;
+}
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+pre {
+  font-size: 18px;
+}
+
+line {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.string, .regexp {
+  color: #f39;
+}
+
+.keyword {
+  color: #00c;
+}
+
+.comment {
+  color: #777;
+  font-style: oblique;
+}
+
+.number {
+  color: #369;
+}
+
+.class, .special {
+  color: #1181B8;
+}
+
+a:link, a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #666;
+}
+
+.hint {
+  float:right;
+  width: 1280px;
+  font-size: 12px;
+  color: #999;
+}
+
+#bg {
+  z-index: -9999;
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
+#zoomOut {
+  display:none;
+  width:200px;
+  height:45px;
+  float:left;
+}
+
+#title{
+  text-align:center;
+}
+#footerText{
+  float:right;
+}
+
+#chart {
+			width: 960px;
+			height: 600px;
+			background: #bbb;
+			margin: 1px auto;
+			position: relative;
+			-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+					box-sizing: border-box;
+		}
+
+text {
+  pointer-events: none;
+}
+
+.grandparent{
+  text-align:center;
+}
+
+.grandparent text {
+  font-weight: bold;
+}
+
+rect {
+  fill: none;
+  stroke: #fff;
+}
+
+rect.parent,
+.grandparent rect {
+  stroke-width: 2px;
+}
+
+.grandparent rect {
+  fill: orange;
+}
+
+.grandparent:hover rect {
+  fill: #ee9700;
+}
+
+.children rect.parent,
+.grandparent rect {
+  cursor: pointer;
+}
+
+.children rect.parent {
+  fill: #bbb;
+  fill-opacity: .5;
+}
+
+.children:hover rect.child {
+  fill: #bbb;
+}
+
+.labelbody {
+            margin: 2px;
+        }
+.foreignObject {
+            font: 9px sans-serif;
+            text-overflow: ellipsis;
+            text-align: left;
+            word-wrap: break-word;
+        }
+
+        #chart{
+        	margin-top:20px;
+        }
+
+        #footer{
+        	float:right;
+        }
+
+        .Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.foreignobj{
+	border: solid 1px white;
+    overflow: hidden;
+    border-radius: 8px;
+    padding:2px;
+    font-size: 12px;
+}
+
+#footer-left-container{
+  float:left;
+  position:absolute;
+}
+
+#back-button{
+  height: 100%;
+}
+
+.hint{
+	  margin-bottom:20px;
+
+}
+
+.dropdown{
+	display:inline-block;
+	height:100%;
+}
